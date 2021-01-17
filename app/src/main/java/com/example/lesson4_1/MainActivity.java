@@ -12,14 +12,14 @@ import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
     Button btn;
-    ImageView[] iv=new ImageView[1];
+    ImageView iv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         btn = (Button)findViewById(R.id.btn);
-        iv[0] =(ImageView) findViewById(R.id.iv);
+        iv =(ImageView) findViewById(R.id.iv);
 
 
     }
@@ -29,16 +29,17 @@ public class MainActivity extends AppCompatActivity {
         int rand_int1 = rand.nextInt(3)+1;
         btn.setText(""+rand_int1);
         if (rand_int1==1){
-            iv[0].setImageResource(R.drawable.glacier);
+            iv.setImageResource(R.drawable.glacier);
+            iv.setImageResource(R.drawable.bubble);
             btn.setText("glacier");
         }
         if (rand_int1==2){
-            iv[0].setImageResource(R.drawable.snow);
+            iv.setImageResource(R.drawable.snow);
             btn.setText("snowi");
         }
         if (rand_int1==3){
-            iv[0].setImageResource(R.drawable.bubble);
-            btn.setText("bubblez");
+            iv.setImageResource(R.drawable.bubble);
+            btn.setText("bubbles");
         }
 
 
