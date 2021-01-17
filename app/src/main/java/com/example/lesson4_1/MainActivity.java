@@ -26,17 +26,17 @@ public class MainActivity extends AppCompatActivity {
 
     public void clicked(View view) {
         Random rand = new Random();
-        int rand_int1 = rand.nextInt(3);
+        int rand_int1 = rand.nextInt(3)+1;
         btn.setText(""+rand_int1);
-        if (rand_int1==0){
+        if (rand_int1==1){
             iv[0].setImageResource(R.drawable.glacier);
             btn.setText("glacier");
         }
-        if (rand_int1==1){
+        if (rand_int1==2){
             iv[0].setImageResource(R.drawable.snow);
             btn.setText("snow");
         }
-        if (rand_int1==2){
+        if (rand_int1==3){
             iv[0].setImageResource(R.drawable.bubble);
             btn.setText("bubbles");
         }
