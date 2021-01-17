@@ -34,11 +34,11 @@ public class MainActivity extends AppCompatActivity {
         }
         if (rand_int1==2){
             iv[0].setImageResource(R.drawable.snow);
-            btn.setText("snow");
+            btn.setText("snowi");
         }
         if (rand_int1==3){
             iv[0].setImageResource(R.drawable.bubble);
-            btn.setText("bubbles");
+            btn.setText("bubblez");
         }
 
 
