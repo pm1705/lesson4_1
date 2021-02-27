@@ -32,11 +32,11 @@ public class MainActivity extends AppCompatActivity {
             iv.setImageResource(R.drawable.glacier);
             btn.setText("1");
         }
-        if (rand_int1==2){
+        else if (rand_int1==2){
             iv.setImageResource(R.drawable.snow);
             btn.setText("2");
         }
-        if (rand_int1==3){
+        else{
             iv.setImageResource(R.drawable.bubble);
             btn.setText("3");
         }
